@@ -8,10 +8,13 @@ int[] RandomArrGen()
     for(int i = 0; i < length; i++)
     {
         arr[i] = new Random().Next(100, 1000);
+//      System.Console.WriteLine(arr[i]);
     }
     return arr;
 
 }
+//Массив можно было бы выводить паралельно его заполняя и тогда на одну итерацию прохода по массиву было бы меньше, но я не думаю, что это существенно
+
 void ArrShow( int[] array )
 {
     for (int i = 0; i < array.Length; i++)
