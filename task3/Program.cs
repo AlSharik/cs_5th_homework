@@ -13,6 +13,8 @@ double[] RandomArrGen()
     for(int i = 0; i < length; i++)
     {
         arr[i] = new Random().NextDouble()*2000-1000;
+        //Random rnd = new Random();
+        //arr[i] = rnd.Next(-1000,1000)+rnd.NextDouble();
         System.Console.WriteLine(arr[i]);
         if(max < arr[i]) max = arr[i];
         if(min > arr[i]) min = arr[i];
